@@ -125,7 +125,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-FRIENDLY_NEIGHBOURS_FRONTEND = os.path.join(BASE_DIR, 'frontend')
+FRIENDLY_NEIGHBOURS_FRONTEND = os.path.join(BASE_DIR, 'friendly_neighbours_frontend')
 
 STATICFILES_DIRS = [
     os.path.join(FRIENDLY_NEIGHBOURS_FRONTEND, 'build', 'static'),
