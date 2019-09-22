@@ -25,7 +25,9 @@ SECRET_KEY = '*yu0@(5+_mi0#fg!@*za!%c4z!p1#p66g%n1sv=^8k-!h#rv5t'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'friendly_neighbours.herokuapp.com'
+]
 
 
 # Application definition
@@ -125,7 +127,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-FRIENDLY_NEIGHBOURS_FRONTEND = os.path.join(BASE_DIR, 'friendly_neighbours_frontend')
+FRIENDLY_NEIGHBOURS_FRONTEND = os.path.join(FRIENDLY_NEIGHBOURS_FRONTEND, 'friendly_neighbours_frontend')
 
 STATICFILES_DIRS = [
     os.path.join(FRIENDLY_NEIGHBOURS_FRONTEND, 'build', 'static'),
